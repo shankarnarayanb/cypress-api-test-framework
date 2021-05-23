@@ -28,3 +28,7 @@ To run the tests using the Cypress Test Runner, run
 Once the test runner has loaded, you can either run the entire suite or click on a specific spec file you wish to test.
 
 Once the tests have completed, Mochawesome reporter generates a standalone HTML/CSS report to help visualize your test runs. The report has filters to display only the tests you want and shows stack trace for failed tests.
+
+[Test Results] (https://shankarnarayanb.github.io/cypress-api-test-framework/)
+
+![Sample Test Report](https://github.com/shankarnarayanb/cypress-api-test-framework/blob/master/sampleReport.PNG?raw=true)

@@ -8,7 +8,7 @@ describe ('A simple PUT request against an API to update a movie genre', functio
       });
   });
 
-  it('PUT -- Successful API POST request', () => {
+  it('PUT -- Successful API PUT request', () => {
       cy.request({
          method: 'PUT', 
          url: specificEndpoint,

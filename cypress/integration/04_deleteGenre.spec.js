@@ -1,4 +1,4 @@
-describe ('A simple PUT request against an API to delete a movie genre', function() {
+describe ('A simple DELETE request against an API to delete a movie genre', function() {
 
   const specificEndpoint = '/genres/9';     
      

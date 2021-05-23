@@ -4,11 +4,11 @@
   "description": "\"A set of tests to be run against a very simple movie genre api\"",
   "main": "index.js",
   "scripts": {
-    "clean": "rm -rf  ./cypress/reports && mkdir ./cypress/reports && mkdir ./cypress/reports/mochareports",    
+    "clean": "rm -rf  cypress/reports && rm -rf public && mkdir cypress/reports && mkdir cypress/reports/mochareports",
     "pretest": "npm run clean",
     "test": "npx cypress run",
-    "combine-reports": "npx mochawesome-merge ./cypress/reports/mocha/*.json -o ./cypress/reports/mochareports/report.json",
-    "generate-report": "npx marge ./cypress/reports/mochareports/report.json -f report -o ./cypress/reports/mochareports",
+    "combine-reports": "npx mochawesome-merge cypress/reports/mocha/*.json > index.json",
+    "generate-report": "npx marge index.json -f index --reportDir public --assetsDir public/assets --reportPageTitle index.html",   
     "posttest": "npm run combine-reports && npm run generate-report"
   },
   "author": "Shankar Balakrishna",
