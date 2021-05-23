@@ -31,4 +31,4 @@ Once the tests have completed, Mochawesome reporter generates a standalone HTML/
 
 [Test Results] (https://shankarnarayanb.github.io/cypress-api-test-framework/)
 
-![Sample Test Report](https://github.com/shankarnarayanb/cypress-api-test-framework/blob/master/sampleReport.PNG?raw=true)
+![Sample Test Report](https://github.com/shankarnarayanb/cypress-api-test-framework/blob/master/sampleReport.PNG)
