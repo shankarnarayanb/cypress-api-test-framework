@@ -1,0 +1,31 @@
+{
+  "name": "cypress-api-test-framework",
+  "version": "1.0.0",
+  "description": "\"A set of tests to be run against a very simple movie genre api\"",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf  ./cypress/reports && mkdir ./cypress/reports && mkdir ./cypress/reports/mochareports",    
+    "pretest": "npm run clean",
+    "test": "npx cypress run",
+    "combine-reports": "npx mochawesome-merge ./cypress/reports/mocha/*.json -o ./cypress/reports/mochareports/report.json",
+    "generate-report": "npx marge ./cypress/reports/mochareports/report.json -f report -o ./cypress/reports/mochareports",
+    "posttest": "npm run combine-reports && npm run generate-report"
+  },
+  "author": "Shankar Balakrishna",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shankarnarayanb/cypress-api-test-framework.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shankarnarayanb/cypress-api-test-framework/issues"
+  },
+  "homepage": "https://github.com/shankarnarayanb/cypress-api-test-framework#readme",
+  "devDependencies": {
+    "cypress": "^7.3.0",
+    "cypress-multi-reporters": "^1.5.0",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
+  }
+}
